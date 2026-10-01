@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3f4f6;
+  --foreground: #111827;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* =========================
+   CAMPOS DE TEXTO
+   ========================= */
+
+input,
+select,
+textarea {
+  color: #111827 !important;
+  background-color: #ffffff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280 !important;
+  opacity: 1;
+}
+
+option {
+  color: #111827;
+  background-color: #ffffff;
+}
+
+/* =========================
+   BOTONES
+   ========================= */
+
+button {
+  cursor: pointer;
+}
+
+/* Botones normales */
+button.bg-blue-600 {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+}
+
+button.bg-blue-600:hover {
+  background-color: #1d4ed8 !important;
+}
+
+/* Botones oscuros */
+button.bg-gray-900 {
+  background-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+button.bg-gray-900:hover {
+  background-color: #1f2937 !important;
+}
+
+button.bg-gray-800 {
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
+}
+
+/* =========================
+   BOTONES CON FONDO BLANCO
+   ========================= */
+
+button.bg-white {
+  background-color: #ffffff !important;
+  color: #374151 !important;
+}
+
+button.bg-white:hover {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+.bg-gray-900,
+.bg-gray-800 {
+  color: #ffffff !important;
+}
+
+.bg-gray-900 *,
+.bg-gray-800 * {
+  color: #ffffff !important;
+}
