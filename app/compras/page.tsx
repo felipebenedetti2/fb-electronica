@@ -113,8 +113,16 @@ export default function ComprasPage() {
     }
 
     setCompras(
-      (comprasResult.data || []) as Compra[]
-    );
+  (comprasResult.data || []).map((compra) => ({
+    ...compra,
+    proveedor: Array.isArray(compra.proveedor)
+      ? compra.proveedor[0]
+      : compra.proveedor,
+    equipo: Array.isArray(compra.equipo)
+      ? compra.equipo[0]
+      : compra.equipo,
+  })) as Compra[]
+);
 
     const cuentasCargadas =
       cuentasResult.data || [];
